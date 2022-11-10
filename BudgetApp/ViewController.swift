@@ -29,7 +29,7 @@ class ViewController: UIViewController {
             type = "Economy"
         }
         else if ((sender as AnyObject).selectedSegmentIndex == 1) {
-            type = "InBudget"
+            type = "In Budget"
         }
         else if ((sender as AnyObject).selectedSegmentIndex == 2) {
             type = "Discounts"
