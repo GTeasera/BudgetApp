@@ -28,6 +28,8 @@ class MainViewController: UIViewController {
         perDayF.text = String(tempBudget! / Double(tempDays!))
         typeF.text = tempType
         
+        var dataArray: [String] = [String]()
+        dataArray = [String(tempBudget!), String(tempDays!), String(tempType!)]
     }
     
 
@@ -46,4 +48,16 @@ class MainViewController: UIViewController {
         controller.modalPresentationStyle = .fullScreen
         present(controller, animated: true, completion: nil)
     }
+    
+//    func saveData() {
+//        
+//        
+//        UserDefaults.standard.set(dataArray, forKey: "DataArr")
+//        UserDefaults.standard.synchronize()
+//    }
+//    
+//    func loadData() {
+//        if let arrayLoad = UserDefaults.standard.array(forKey: "DataArr") as? [[String: Any]]
+//            data
+//    }
 }
